@@ -48,7 +48,7 @@ echo "initAll.sh -------------------------------------------------------"
 for i in `seq 0 $serverNum `
 do
   #checkc yum
-  # sshpass -p ${passwd[$i]} ssh root@${ips[$i]} 
+  sshpass -p ${passwd[$i]} ssh root@${ips[$i]} | 
   #transport files
   echo "transport libsource"
   tar czf - -C ./ libsource | sshpass -p ${passwd[$i]} ssh root@${ips[$i]} 'tar zxvf - -C /home'

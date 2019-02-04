@@ -8,11 +8,6 @@ serverNum=0
 cnt=0
 passwd=()
 
-# 必要なライブラリ check
-# sshpass
-# mpi 
-# kernel-devel
-
 # 変数の代入 sshのための
 for i in `cat $setting`
 do
